@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - VIDEO</title>
+</head>
+
+<body>
+
+    <video controls id="ourVideoLocation">
+        <source src="our-video.mp4">
+    </video>
+
+    <button onclick="playOurVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+
+    <script>
+        var myVideo = document.getElementById('ourVideoLocation')
+
+        function playOurVideo() {
+            console.log('I am testing')
+            myVideo.play();
+        }
+
+        function pauseVideo() {
+            myVideo.pause();
+        }
+    </script>
+
+</body>
+
+
+</html>

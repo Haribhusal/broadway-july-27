@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 WEB STORAGE</title>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="password" id="pass" placeholder="Please Enter your Password">
+        <button onclick="savePassword()">Save Password</button>
+    </form>
+
+    <h3 id="valueFromLocalStorage"></h3>
+
+
+
+    <script>
+        const valueFromLocalStorage = document.getElementById('valueFromLocalStorage');
+
+        function savePassword() {
+            const pass = document.getElementById('pass');
+            const myPaymentInformation = {
+                password: pass.value
+            }
+            localStorage.setItem("My Banking Information", myPaymentInformation.password)
+            valueFromLocalStorage.innerHTML = localStorage.getItem("My Banking Information")
+        }
+
+
+
+        // const cardNumber = document.getElementById('cardNumber');
+        // const myPaymentInformation = {
+        //     cardNumber: "",
+        //     cvc: '423',
+        //     bankName: 'SiddharthaBank'
+        // }
+
+        // cardNumber.value = localStorage.getItem("My Banking Information")
+    </script>
+</body>
+
+</html>

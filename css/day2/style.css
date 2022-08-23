@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+}
+
+[href*=w3s] {
+    border: 1px solid red;
+    background-color: yellow;
+}
+
+/* 
+body {
+    background-color: pink;
+}
+
+.paragraph {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.para1.para2 {
+    color: green;
+    font-size: 100px;
+}
+
+.parent .childpara {
+    color: red;
+    font-weight: bolder;
+    font-size: 40px;
+    text-decoration: line-through;
+}
+
+#favgames {
+
+    list-style: none;
+    color: red;
+    font-size: 100px;
+
+}
+
+
+
+.testhtmlclass,
+#testHtmlId {
+    font-size: 100px;
+    color: rebeccapurple;
+}
+
+
+.directCheck>p {
+    color: yellow;
+}
+
+.directCheck {
+    color: green;
+} */
+
+
+
+
+.directCheck~p {
+    color: red;
+}
+
+
+
+[href="google.com"] {
+    color: red;
+}
+
+[alt~=random] {
+    border: 10px solid red;
+}
+
+
+[lang|=en] {
+    border: 10px dotted red;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./myfirststyle.css">
+    <title>Document</title>
+    <style>
+        /* Internal Stylesheet */
+        [class="title1"] {
+            background-color: pink !important;
+        }
+
+        ::selection {
+            color: red;
+            background-color: green;
+        }
+
+        .title1 {
+            color: green;
+            font-size: 100px;
+            background-color: red;
+            transition: background-color 5s;
+
+        }
+
+
+        .title1:hover {
+            background-color: yellow;
+        }
+
+        .titleInline {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline stylesheet -->
+    <h1 class="titleInline">This is our first heading tag to style</h1>
+    <h1 class="title1">This is our first heading tag to style</h1>
+
+</body>
+
+</html>

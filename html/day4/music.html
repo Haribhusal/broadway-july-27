@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="np">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This file has music</title>
+</head>
+
+<body>
+
+
+    <div id="testWrap">
+
+
+
+        <h1>Music</h1>
+
+
+        <audio id="myAudio" src="./music/testmusic.mp3" controls>
+
+        </audio>
+
+
+
+
+
+        <button id="playAudio">Click here to play audio file above</button>
+        <button id="pauseMusic">Pause</button>
+
+    </div>
+
+    <script>
+        var myAudioFileIdentify = document.getElementById('myAudio')
+        var testWrap = document.getElementById('testWrap')
+
+        setTimeout(() => {
+            testWrap.style.display = "none"
+        }, 5000);
+
+        // var myButton = document.getElementById('playAudio')
+        // var myPauseButton = document.getElementById('pauseMusic')
+
+        // myButton.addEventListener("click", function () {
+        //     myAudioFileIdentify.play();
+        // })
+
+        // myPauseButton.addEventListener("click", function () {
+        //     myAudioFileIdentify.pause();
+        // })
+    </script>
+
+</body>
+
+</html>

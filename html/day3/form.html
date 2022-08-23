@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - FORM</title>
+    <style>
+        /* label {
+            display: block;
+        } */
+        .from-group {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3>Please Povice us your Information</h3>
+        <div class="form-group">
+            <label for="myTextInput">Put your name below</label>
+            <input id="myTextInput" type="text" placeholder="Enter your name here..." required />
+        </div>
+
+        <div class="form-group">
+            <label for="emailInput">Put your Email</label>
+            <input id="emailInput" type="email" placeholder="Enter your Email here..." required />
+        </div>
+
+        <div class="form-group">
+            <label for="passwordInput">Put your Password below</label>
+            <input id="passwordInput" type="password" placeholder="Enter your name here..." />
+        </div>
+
+        <h3>Checkbox </h3>
+        <p>Pleae select your hobbies</p>
+        <div>
+            <input type="checkbox" id="heythisischangedclass" name="checkInput">
+            <label for="heythisischangedclass">Cricket</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hobb2" name="checkInput">
+            <label for="hobb2">Cricket</label>
+        </div>
+        <div>
+
+        </div>
+        <h3>Please Select your Gender</h3>
+
+        <div class="from-group">
+            <input type="radio" id="male" name="genderSelector" name="checkInput">
+            <label for="male">Male</label>
+        </div>
+
+        <div class="from-group">
+            <input type="radio" id="female" name="genderSelector">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="courses">Please select the course you might like</label>
+            <select id="courses">
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option>
+                <option value="4">Pthon</option>
+            </select>
+        </div>
+
+        <button type="submit">go</button>
+
+    </form>
+
+    <hr />
+
+    <input type="text">
+</body>
+
+</html>
