@@ -1,0 +1,124 @@
+a {
+    color: red;
+}
+
+a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+a:active {
+    background-color: blue;
+}
+
+ul li::after {
+    content: 'test test test';
+}
+
+ul li::before {
+    content: 'before test';
+}
+
+
+
+/* form */
+#testcheckbox {
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+}
+
+#testcheckbox:checked {
+    box-shadow: 10px 10px 20px rgba(200, 0, 0, 1);
+}
+
+.testdisabled:disabled {
+    background-color: red;
+    border: 10px solid green;
+}
+
+.testempty:empty {
+    display: none;
+}
+
+
+/* child behaviour */
+
+ol li {
+    background-color: blue;
+    /* color: whie; */
+}
+
+ol li:last-child {
+    background-color: orange;
+    /* color: whie; */
+}
+
+ol li:first-child {
+    background-color: pink;
+    /* color: whie; */
+}
+
+ol li:nth-child(3) {
+    background-color: purple;
+    color: white;
+}
+
+.test p:first-child {
+    background-color: green;
+}
+
+/* 
+.likePaper::first-letter {
+    font-size: 50px;
+    padding: 30px;
+    background-color: red;
+
+}
+
+.likePaper::first-line {
+    background-color: pink;
+    color: orange;
+} */
+
+
+.testdiv p:first-of-type {
+    background-color: orange;
+}
+
+.testdiv a:first-of-type {
+    background-color: blue;
+}
+
+textarea:focus {
+
+    background-color: red;
+
+}
+
+textarea:hover {
+    background-color: pink;
+}
+
+.ageInput {
+    display: block;
+    width: 100%;
+
+}
+
+.ageInput:in-range {
+    outline: 4px solid green;
+}
+
+.ageInput:out-of-range {
+    outline: 4px solid red;
+}
+
+.emailInput:invalid {
+    outline: 10px solid red;
+}
+
+p[lang='np'] {
+    background-color: red;
+}
