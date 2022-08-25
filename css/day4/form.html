@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primaryColor: #0097a7;
+            --secondaryColor: red;
+            --accentColor: yellow;
+        }
+
+        input:optional {
+            border: 1px solid yellow;
+        }
+
+        input {
+            min-width: 400px;
+            color: var(--accentColor);
+            border: 3px solid var(--primaryColor) !important
+        }
+
+        input::placeholder {
+            color: red;
+        }
+
+        input:focus::placeholder {
+            color: green;
+        }
+
+        input[type='number']:out-of-range {
+            border: 10px solid red;
+        }
+
+        input[type='number']:in-range {
+            border: 10px solid green;
+        }
+
+        input:read-only {
+            opacity: 0.1;
+        }
+
+        button {
+            background-color: var(--primaryColor);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email" readonly>
+        <input type="password" placeholder="Enter Password">
+        <button type="submit">Submit</button>
+
+
+        <hr />
+        <input type="number" max="30" min="20" placeholder="Enter your age">
+    </form>
+</body>
+
+</html>

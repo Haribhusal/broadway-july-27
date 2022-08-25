@@ -1,0 +1,54 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.group:not(p) {
+    border: 10px solid red;
+}
+
+ol li {
+    color: red;
+}
+
+ol li:nth-child(4) {
+    color: yellow;
+    background-color: black;
+}
+
+ol li:first-child {
+    color: yellow;
+    background-color: black;
+}
+
+ol li:last-child {
+    color: yellow;
+    background-color: black;
+}
+
+ol li:nth-last-child(3) {
+    color: yellow;
+    background-color: black;
+}
+
+
+.testgroup p:nth-last-of-type(1) {
+    color: yellow;
+    background-color: black;
+}
+
+.testgroup h1:nth-last-of-type(2) {
+    color: orange;
+}
+
+.testgroup p:nth-child(3) {
+    color: red;
+}
+
+.testtest h1:nth-of-type(4) {
+    background-color: yellow;
+}
+
+.onlygroup a:only-of-type {
+    background-color: purple;
+}

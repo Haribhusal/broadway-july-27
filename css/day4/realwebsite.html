@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Website</title>
+    <style>
+        /* internal css */
+
+        ul {
+            max-width: 500px;
+            list-style: none;
+            padding: 30px;
+            color: red;
+            box-shadow: 0px 0px 30px rgba(131, 50, 50, 0.8);
+        }
+
+        ul li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #bbb;
+            color: red;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+            background-color: pink;
+            color: green;
+        }
+
+
+        ul li:last-child a {
+            color: orange;
+        }
+
+
+
+        ul li a {
+            text-decoration: none;
+            color: red;
+            /* font-size: 30px;
+            text-decoration: none;
+            color: #333; */
+        }
+
+        .team {
+            color: red;
+        }
+
+        .team .team-member h3:nth-child(3) {
+            color: green;
+            padding: 10px;
+            background-color: purple !important;
+        }
+
+        .team .team-member:nth-child(3) h3 {
+            color: green;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        .team .team-member:last-child h3 {
+            color: orange;
+            padding: 10px;
+            background-color: black;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h3>
+        Our Team
+    </h3>
+
+
+    <div class="team">
+        <div class="team-member">
+            <h3>Gyalbu Lama</h3>
+        </div>
+        <div class="team-member">
+            <h3>Urja Dhungana</h3>
+        </div>
+        <div class="team-member">
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+        </div>
+        <div class="team-member">
+            <h3>Nabin Deula</h3>
+        </div>
+    </div>
+    <div class="team">
+        <div class="team-member">
+            <h3>Gyalbu Lama</h3>
+        </div>
+        <div class="team-member">
+            <h3>Urja Dhungana</h3>
+        </div>
+        <div class="team-member">
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+        </div>
+        <div class="team-member">
+            <h3>Nabin Deula</h3>
+        </div>
+    </div>
+    <div class="team">
+        <div class="team-member">
+            <h3>Gyalbu Lama</h3>
+        </div>
+        <div class="team-member">
+            <h3>Urja Dhungana</h3>
+        </div>
+        <div class="team-member">
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+            <h3>Kushal Timilsina</h3>
+        </div>
+        <div class="team-member">
+            <h3>Nabin Deula</h3>
+        </div>
+    </div>
+
+    <hr />
+    <h3>Our Services</h3>
+
+    <ul>
+        <li>
+            <a href="#">
+                Web Design and Development
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Graphics Designing
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Digital Marketing </a>
+        </li>
+        <li>
+            <a href="#">
+                Software Development </a>
+        </li>
+        <li>
+            <a href="#">
+                Mobile Application Development </a>
+        </li>
+    </ul>
+
+</body>
+
+</html>

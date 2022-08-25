@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            min-height: 100vh;
+        }
+
+        section:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        section:nth-child(even) {
+            background-color: blue;
+        }
+
+        #news:target {
+            border: 10px solid black;
+        }
+
+        #blog:target {
+            border: 10px solid black;
+        }
+
+        /* LOVEHATE */
+        .menu li a:link {
+            color: red;
+        }
+
+        .menu li a:visited {
+            color: green;
+        }
+
+        .menu li a:hover {
+            color: blue;
+        }
+
+        .menu li a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="head">
+        <ul class="menu">
+            <li>
+                <a href="#slider">Go to Slider</a>
+            </li>
+            <li>
+                <a href="#news">Go to news</a>
+            </li>
+            <li>
+                <a href="#blog">Go to blog</a>
+            </li>
+            <li>
+                <a href="#contact">Go to contact</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <section id="slider">this is slider</section>
+    <section id="news">this is news</section>
+    <section id="blog">this is blog</section>
+    <section id="contact">this is Contact</section>
+    <section id="test">this is test</section>
+    <section id="test2">this is test 2</section>
+</body>
+
+</html>
