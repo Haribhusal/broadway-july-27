@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Dancing Script',
+        cursive;
+}
+
+h1 {
+    /* The color of h1 tag will be blue */
+    color: #0097a7;
+    /* color: rgb(116, 98, 98); */
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+    border: 1px solid rebeccapurple;
+}
+
+.box img {
+    display: none;
+
+}
+
+.box:hover img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+
+.banner {
+    outline: 10px solid black;
+    outline-offset: -30px;
+
+
+    /* border-style: dotted;
+    border-left: 10px solid black;
+    
+    border-width: 10px;
+    border-color: black; */
+    /* border: 16px solid; */
+    /* border: 16px solid rgba(0, 200, 2, 0); */
+    height: 500px;
+    width: 1000px;
+    /* background-color: red;
+    background-image: url('./horse.jpg');
+    border-radius: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed; */
+    background: url('./horse.jpg') no-repeat red center;
+    /* shorthand property */
+    transition: all 2s ease-out;
+}
+
+.banner:hover {
+    outline-offset: 0;
+    /* border: 16px solid rgba(0, 200, 2, 1); */
+}
+
+/* img {
+    transition: all 2s ease;
+    height: 100px;
+    width: 200px;
+}
+
+img:hover {
+    height: 200px;
+    width: 400px;
+} */
+
+.container {
+    max-width: 500px;
+    display: none;
+}
+
+.container img {
+    float: right;
+    margin-right: 10px;
+}
+
+.container {
+    clear: both;
+}
+
+.table-cell {
+    display: table;
+}
+
+.table-column {
+    display: table-cell;
+}
