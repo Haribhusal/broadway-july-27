@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+        }
+
+        .box>div {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+
+        }
+
+        .box .blueLayer {
+            background-color: blue;
+            left: 150px;
+            top: 0;
+            z-index: 1;
+        }
+
+        .box .redLayer {
+            background-color: red;
+            left: 100px;
+            top: 50px;
+            z-index: 5;
+        }
+
+        .box .greenLayer {
+            background-color: green;
+            left: 50px;
+            top: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="blueLayer">blue</div>
+        <div class="redLayer">red</div>
+        <div class="greenLayer">green</div>
+    </div>
+</body>
+
+</html>

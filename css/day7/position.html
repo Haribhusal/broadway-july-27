@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            padding: 20px 30px;
+            background-color: orange;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .chatbox {
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+
+        .chatbox img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="topbar">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptas minus odit ipsum illum nesciunt
+            quos dolorem esse, exercitationem neque nulla maiores ratione delectus placeat qui ducimus magni. Sit, amet!
+        </p>
+    </div>
+
+    <header>
+        <h1 class="logo">Logo</h1>
+        <p class="test">test</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main style="height: 3000px;">
+
+    </main>
+
+    <div class="chatbox">
+        <img src="./chat-icon.jpg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        .parent {
+            counter-reset: findChild;
+        }
+
+        .parent .child {
+            counter-increment: findChild;
+            height: 100px;
+            width: 300px;
+            background-color: pink;
+            margin-bottom: 30px;
+        }
+
+        .parent .child::before {
+            content: counter(findChild);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="parent">
+        <div class="child">Ram</div>
+        <div class="child">Shyam</div>
+        <div class="child">Gita</div>
+    </div>
+
+</body>
+
+</html>

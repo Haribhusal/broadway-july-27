@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tranform</title>
+    <style>
+        .titleBox {
+            height: 500px;
+            width: 1000px;
+            background-color: orange;
+            position: relative;
+        }
+
+        .titleBox .textContent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+        }
+
+
+        .titleBox .imageBanner {
+            height: 100%;
+            width: 100%;
+        }
+
+        .titleBox .imageBanner img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="titleBox">
+        <!-- height widht -->
+
+        <div class="imageBanner">
+            <!-- hei -->
+
+            <img src="./horse.jpg" alt="">
+        </div>
+        <div class="textContent">
+            <h3>Welcome to our Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nesciunt sint sunt praesentium voluptas id porro rerum iste ut sed eaque.
+            </p>
+            <a href="#">
+                <button class="btn">Read More</button>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
