@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+
+        .shadow {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: red;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            z-index: -1;
+            opacity: 0.8;
+            filter: blur(20px);
+            transform: perspective(300px);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="banner" style="background-image: url('https://picsum.photos/id/23/400/400')">
+        <div class="shadow" style="background-image: url('https://picsum.photos/id/23/400/400')"></div>
+    </div>
+
+</body>
+
+</html>

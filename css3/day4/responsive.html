@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blogList {
+            padding: 30px;
+        }
+
+        .blogList a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #bbb;
+        }
+
+        .blogList .info {
+            padding: 30px;
+        }
+
+        .blogList .info h3 {
+            margin-bottom: 20px;
+        }
+
+        .blogList a:hover {
+            /* text-decoration: none; */
+            color: blue;
+        }
+
+        .blogList {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h3 {
+                font-size: 30px;
+            }
+
+            .blogList {
+
+                background-color: red;
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+        }
+
+        @media (max-width: 520px) {
+            h3 {
+                font-size: 20px;
+            }
+
+            .blogList {
+
+                background-color: orange;
+
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+        }
+
+        .blogList figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blogList a img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="blogList">
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article>
+                <figure>
+                    <img src="./horse.jpg" alt="">
+                </figure>
+                <div class="info">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quas.
+                    </h3>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis, delectus
+                        voluptatem consectetur minus eveniet. Doloremque, magni. Suscipit, ab! Et voluptatibus,
+                        consectetur possimus id ad voluptatem tempora debitis minus?
+                    </p>
+                </div>
+            </article>
+        </a>
+    </div>
+</body>
+
+</html>

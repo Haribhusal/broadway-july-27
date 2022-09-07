@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-weight: bolder;
+        }
+
+        .fontwala {
+            font-weight: 100;
+            font-size: 40px;
+            font-style: normal;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .textbox {
+            text-decoration: underline;
+            background-color: yellow;
+            height: 50vh;
+            width: 50vw;
+            text-transform: lowercase;
+            text-shadow: 2px 5px 10px red;
+            text-indent: 10px;
+            text-decoration-style: dotted;
+            text-decoration-color: black;
+            text-emphasis: 10px;
+            /* text-underline-offset: 30px; */
+            text-underline-position: above;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 40px;
+            /* font-weight: 500; */
+            font-weight: lighter;
+            font-style: italic;
+
+        }
+
+        .textbox h1 {
+            margin: 0;
+        }
+
+        .textbox p {
+            width: 300px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background-color: red;
+
+            overflow: hidden;
+        }
+
+        .textbox h1::first-letter,
+        .textbox p::first-letter {
+            text-transform: uppercase;
+        }
+
+        input {
+            text-indent: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <form action="">
+        <input type="text" placeholder="Please enter your name">
+    </form>
+    <hr /> -->
+    <p class="fontwala">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque, eveniet autem aut obcaecati
+        consectetur
+        reiciendis accusantium? Cum blanditiis nesciunt ipsa sapiente, animi eius dolorem veritatis, odio ut doloremque
+        ipsum.</p>
+
+    <div class="textbox">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores facilis non asperiores fugiat
+            iure rerum <span><b>possimus rem nisi velit aliquid,</b></span> fugit mollitia. Fugiat, quos eius expedita
+            eos odit
+            omnis.
+        </p>
+        <b>Lorem ipsum dolor sit amet.</b>
+
+    </div>
+</body>
+
+</html>

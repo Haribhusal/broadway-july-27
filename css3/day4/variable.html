@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --primaryColor: #0097a7;
+            --black: #323232;
+            --white: #f8f8f8;
+            --primaryFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            --columGap: 60px;
+        }
+
+        .btn {
+            padding: 10px;
+
+        }
+
+        body {
+            font-family: var(--primaryFont);
+        }
+
+        .banner1 .btn {
+            background-color: var(--primaryColor);
+        }
+
+        .banner2 .btn {
+            background-color: var(--black);
+        }
+
+        .banner3 .btn {
+            background-color: var(--white);
+        }
+
+        .banner1 h3 {
+            color: var(--primaryColor);
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            column-gap: var(--columGap);
+            background-color: var(--primaryColor);
+        }
+
+        .box .child {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="child">1</div>
+        <div class="child">2</div>
+    </div>
+    <header>
+        <h3>logo</h3>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner banner1">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum veritatis optio laboriosam, nam
+                dolor asperiores exercitationem mollitia. Delectus dolore repudiandae reprehenderit alias unde hic quam!
+                Repudiandae numquam consectetur eveniet.
+            </p>
+            <a href="#">
+                <button class="btn">Read More</button>
+            </a>
+        </section>
+        <section class="banner banner2">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum veritatis optio laboriosam, nam
+                dolor asperiores exercitationem mollitia. Delectus dolore repudiandae reprehenderit alias unde hic quam!
+                Repudiandae numquam consectetur eveniet.
+            </p>
+            <a href="#">
+                <button class="btn">Read More</button>
+            </a>
+        </section>
+        <section class="banner banner3">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum veritatis optio laboriosam, nam
+                dolor asperiores exercitationem mollitia. Delectus dolore repudiandae reprehenderit alias unde hic quam!
+                Repudiandae numquam consectetur eveniet.
+            </p>
+            <a href="#">
+                <button class="btn">Read More</button>
+            </a>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+
+
+</html>
