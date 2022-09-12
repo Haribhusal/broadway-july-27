@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    gap: 30px;
+}
+
+main aside {
+    flex: 1;
+    height: 300px;
+    background-color: green;
+
+}
+
+main section {
+    flex: 1;
+    height: 300px;
+    background-color: orange;
+}

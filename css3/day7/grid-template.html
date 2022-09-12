@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .website {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+        } */
+        .website {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-template:
+                'ourheader ourheader ourheader ourheader'
+                'myaside mymain mymain mymain'
+                'myfooter myfooter myfooter myfooter ';
+        }
+
+        /* 
+        .website header {
+            grid-row: 1/3;
+            grid-column: 1/5;
+            background-color: pink;
+        }
+
+        .website aside {
+            grid-row: 3/9;
+            grid-column: 1/2;
+            background-color: red;
+        }
+
+        .website main {
+            grid-row: 3/9;
+            grid-column: 2/5;
+            background-color: blue;
+        }
+
+        .website footer {
+            grid-row: 9/10;
+            grid-column: 1/5;
+            background-color: black;
+        } */
+
+        .website header {
+            grid-area: ourheader;
+
+            background-color: pink;
+        }
+
+        .website aside {
+
+            grid-area: myaside;
+            background-color: red;
+        }
+
+        .website main {
+            grid-area: mymain;
+
+            background-color: blue;
+        }
+
+        .website footer {
+            grid-area: myfooter;
+
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="website">
+        <header>this is header</header>
+        <aside>leftbar</aside>
+        <main>main content area</main>
+        <footer>this is footer</footer>
+    </div>
+
+</body>
+
+</html>
