@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aie {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ais {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.jcs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jcb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jce {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.flex3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.flex4 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.flex5 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.flex6 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.flex7 {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.flex8 {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+.flex9 {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.flex10 {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.gap {
+  gap: 15px;
+}
+
+.gap_sm {
+  gap: 5px;
+}
+
+.gap_lg {
+  gap: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  header .menulist {
+    display: none;
+  }
+  header .menubar {
+    padding: 15px;
+  }
+  .menuToggler {
+    display: block;
+  }
+  .featuresCard .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .productTab .products {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .productsAndSlider .productGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .productsAndSlider .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .social .container,
+  .searchbar .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .menuLinkWrapper .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .menuToggler {
+    display: none;
+  }
+}
+
+header form {
+  position: relative;
+}
+
+header .searchbar {
+  padding: 10px 0;
+  background-color: #323232;
+}
+
+header .searchbar .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+}
+
+header .searchbar .icons i {
+  background-color: #fff;
+  font-size: 22px;
+  border: 4px;
+  padding: 5px;
+}
+
+header .searchbar input {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+
+header .searchbar .btn-search {
+  color: #4380DB;
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+  top: 50%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-transform: scaleX(-1) translateY(-50%);
+          transform: scaleX(-1) translateY(-50%);
+}
+
+header .searchbar .btn-block {
+  width: 100%;
+  background-color: #4380DB;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
+
+header .menulist .hasSubMenu:hover .submenu {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  min-width: 300px;
+  left: 50%;
+  padding: 10px 0;
+  z-index: 9999;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+header .menulist .hasSubMenu:hover .submenu li a {
+  color: #323232;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+header .menulist li {
+  position: relative;
+}
+
+header .menulist li .submenu {
+  display: none;
+}
+
+header .menulist li .submenu li:last-child a {
+  border-bottom: none;
+}
+
+header .menulist li .submenu::before {
+  content: '';
+  border-bottom: 15px solid #fff;
+  border-top: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header .menulist li:last-child a {
+  padding-right: 0px;
+}
+
+header .menulist a {
+  /* background-color: red; */
+  padding: 20px 15px;
+  display: block;
+}
+
+/* footer */
+footer {
+  position: relative;
+}
+
+footer .social {
+  background-color: #000;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+}
+
+footer .social .socialLinks a {
+  color: #fff;
+}
+
+footer .social .socialLinks a i {
+  font-size: 30px;
+}
+
+footer .menuLinkWrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #323232;
+  color: #fff;
+}
+
+footer .menuLinkWrapper .menulinks li a {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .menuLinkWrapper a {
+  color: #fff;
+}
+
+footer .menuLinkWrapper .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+footer .menuLinkWrapper .menuList strong {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .gototop {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+footer .gototop i {
+  font-size: 30px;
+}
+
+/* main */
+/* productsAndSlider */
+.productsAndSlider {
+  padding: 30px 0;
+  background-color: var(--dimMainColor);
+}
+
+.productsAndSlider .imageBanner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.productsAndSlider .imageBanner img {
+  width: 100%;
+  height: 100%;
+}
+
+.productsAndSlider .productGrid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.productsAndSlider .productGrid .image {
+  height: 100px;
+}
+
+.productsAndSlider .productGrid .product-wrapper {
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productsAndSlider .productGrid .product-wrapper .product a {
+  display: block;
+}
+
+.productsAndSlider .rating {
+  margin: 5px 0;
+  color: var(--mainColor);
+}
+
+.saleBanner {
+  padding: 30px 0;
+}
+
+.saleBanner .container {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.saleBanner .container .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.saleBanner .container .item:hover img {
+  -webkit-transform: scale(1.5) rotate(3deg);
+          transform: scale(1.5) rotate(3deg);
+}
+
+.saleBanner .container .item:hover::before {
+  display: none;
+}
+
+.saleBanner .container .item::before {
+  height: 100%;
+  width: 100%;
+  background-color: var(--dimMainColor);
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+}
+
+.saleBanner .container img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.productTab .titlewrapper {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.productTab .products {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid #eee;
+  padding: 30px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.productTab .products .product {
+  border: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: var(--dimMainColor);
+}
+
+.productTab .products .product .image {
+  overflow: hidden;
+  height: 100px;
+}
+
+.productTab .products .product .image img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.productTab .products .product:hover {
+  background-color: #fff;
+  border: none;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.productTab .products .product:hover .info .name {
+  color: #4380DB;
+}
+
+.productTab .products .product:hover .image img {
+  -webkit-transform: scale(1.4) rotate(10deg);
+          transform: scale(1.4) rotate(10deg);
+}
+
+.featuresCard {
+  padding: 30px 0;
+  display: block;
+}
+
+.featuresCard .container {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.featuresCard .container .title {
+  margin-bottom: 5px;
+}
+
+.featuresCard .container .text {
+  font-size: 12px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.featuresCard .container .feature1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+  border: 1px solid var(--dimMainColor);
+}
+
+.about-page .titlewrapper .title {
+  margin: 30px 0;
+}
+/*# sourceMappingURL=allstyle.css.map */

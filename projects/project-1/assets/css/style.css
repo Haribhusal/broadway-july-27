@@ -16,6 +16,10 @@ header .menulist li {
 
 }
 
+header .menulist li:last-child a {
+    padding-right: 0px;
+}
+
 header .menulist .hasSubMenu:hover .submenu {
     display: block;
     position: absolute;
@@ -143,11 +147,6 @@ header .searchbar .icons i {
     display: block;
 }
 
-
-.productsAndSlider .container {
-    /* align-items: flex-start; */
-}
-
 .productsAndSlider .imageBanner {
     flex: 1;
 }
@@ -238,6 +237,14 @@ header .searchbar .icons i {
     transform: scale(1.4) rotate(10deg);
 }
 
+.productTab .products .product:hover {
+    transform: translateY(-4px);
+}
+
+.productTab .products .product:hover .info .name {
+    color: var(--mainColor);
+}
+
 .featuresCard .container {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
@@ -264,4 +271,76 @@ header .searchbar .icons i {
 
 .featuresCard .container .title {
     margin-bottom: 5px;
+}
+
+
+/* footer */
+footer .menuLinkWrapper .menuList strong {
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer .menuLinkWrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #323232;
+    color: #fff;
+}
+
+footer .menuLinkWrapper .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+footer .menuLinkWrapper a {
+    color: #fff;
+}
+
+
+footer {
+    position: relative;
+}
+
+footer .gototop {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+footer .gototop i {
+    font-size: 30px;
+}
+
+/* footer */
+footer .menuLinkWrapper .menulinks li a {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer .social {
+    background-color: #000;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+}
+
+footer .social .socialLinks a {
+    color: #fff;
+
+}
+
+footer .social .socialLinks a i {
+    font-size: 30px;
 }

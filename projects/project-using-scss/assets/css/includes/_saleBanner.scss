@@ -1,0 +1,38 @@
+.saleBanner {
+    padding: 30px 0;
+
+    .container {
+        flex-wrap: nowrap;
+
+        .item {
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                img {
+                    transform: scale(1.5) rotate(3deg);
+
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &::before {
+                height: 100%;
+                width: 100%;
+                background-color: var(--dimMainColor);
+                top: 0;
+                left: 0;
+                position: absolute;
+                content: '';
+            }
+        }
+
+        img {
+            max-width: 100%;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+}

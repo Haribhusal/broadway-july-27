@@ -1,0 +1,64 @@
+@import './includes/variable';
+@import './includes/header';
+
+
+body {
+    font-family: $font;
+    background-color: $myColor
+}
+
+@mixin cardStyles($bgColor, $borderColor, $borderRadius, $borderWidth) {
+    background-color: $bgColor;
+    padding: 10px;
+    border: $borderWidth solid $borderColor;
+    border-radius: $borderRadius;
+}
+
+@mixin buttonStyle ($dynamicColor: red) {
+    background-color: $dynamicColor;
+    padding: 10px 30px;
+    border: 1px solid green;
+    border-radius: 100px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+@mixin buttonColor($color) {
+    background: $color;
+}
+
+header button {
+    @include buttonStyle(red);
+}
+
+.banner button {
+    @include buttonStyle(white);
+
+}
+
+.services button {
+    @include buttonStyle(purple);
+    color: #fff;
+}
+
+footer button {
+    @include buttonStyle;
+    padding: 30px !important;
+}
+
+
+
+header .card {
+    @include cardStyles(#fff, purple, 50px, 5px);
+}
+
+.banner .card {
+    @include cardStyles(orange, black, 100px, 10px);
+
+}
+
+.services .card {
+    @include cardStyles(green, orange, 10px, 10px);
+    padding: 40px !important;
+
+}
