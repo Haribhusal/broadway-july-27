@@ -1,8 +1,18 @@
-import logo from './logo.svg';
+import HeaderComponent from './components/Header'
+import MenuLinks from './components/MenuLinks';
+import ServicesComponent from './components/Services';
+
 
 function App() {
   return (
-    <p>hello</p>
+    <div>
+      <MenuLinks></MenuLinks>
+      <HeaderComponent></HeaderComponent>
+      <ServicesComponent></ServicesComponent>
+
+
+
+    </div>
   );
 }
 

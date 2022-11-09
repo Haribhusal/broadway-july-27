@@ -1,0 +1,6 @@
+.servicesWrapper{
+    display: flex;
+}
+.servicesWrapper > div{
+    width: 100%;
+}
