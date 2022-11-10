@@ -35,13 +35,18 @@ const ServicesComponent = () => {
 
         },
     ]
-  return (
-   <div className='servicesWrapper'>
-   {services.map((serviceItem)=> (
-    <CardComponent cardtitle={serviceItem.title} cardDetail={serviceItem.desc} buttonLabel={serviceItem.buttonLabel} key={serviceItem.id}></CardComponent>
-    ))}
-   </div>
-  )
+    return (
+
+        <section className='servicesWrapper'>
+            <div className="container">
+                <div className="row">
+                    {services.map((serviceItem) => (
+                        <CardComponent cardtitle={serviceItem.title} cardDetail={serviceItem.desc} buttonLabel={serviceItem.buttonLabel} key={serviceItem.id}></CardComponent>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default ServicesComponent

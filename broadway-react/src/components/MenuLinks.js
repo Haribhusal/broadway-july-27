@@ -1,5 +1,6 @@
 import React from 'react'
 import logoImage from './../logo.png';
+import {Link} from "react-router-dom";
 
 const MenuLinks = () => {
 
@@ -7,7 +8,7 @@ const MenuLinks = () => {
         {
             id: 1,
             title: "Home",
-            link: '/home'
+            link: '/'
         },
         {
             id: 2,
@@ -30,10 +31,12 @@ const MenuLinks = () => {
     // JSX
     <div className='menuStyles'>
         <img src={logoImage} height={60} alt="test logo"/>
-        <ul className=''>
-            {menuItems.slice(0,3).map((menuItem) => (
+        <ul className='menuItems'>
+            {menuItems.map((menuItem) => (
                 <li key={menuItem.id}>
-                    <a href={menuItem.link}>{menuItem.title}</a>
+                    <Link to={menuItem.link}>
+                    <a>{menuItem.title}</a>
+                    </Link>
                 </li>
             ))}
         </ul>
